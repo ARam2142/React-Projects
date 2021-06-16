@@ -1,10 +1,12 @@
-import logo from "./logo.svg";
+import { useState } from "react";
 import "./App.css";
 
 function App() {
+  const [isClicked, setisClicked] = useState(false);
+
   return (
     <div className="background">
-      <button>Press Me</button>
+      <button className="center">Press Me</button>
     </div>
   );
 }
